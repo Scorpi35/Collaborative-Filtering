@@ -1,3 +1,4 @@
+import turicreate
 import numpy as np
 import pandas as pd
 from sklearn import cross_validation as cv
@@ -42,4 +43,11 @@ item_prediction = predict(train_data_matrix, item_similarity, type='item')
 user_prediction = predict(train_data_matrix, user_similarity, type='user')
 
 
+
+train_data = turicreate.SFrame(ratings_train)
+test_data = turicreate.Sframe(ratings_test)
+
+popularity_model = turicreate.popularity_recommender.create(train_data, user_id='user_id', item_id='movie_id', target='rating')
+popularity_recomm = popularity_model.recommend(users=[1,2,3,4,5],k=5)
+popularity_recomm.print_rows(num_rows=25)
 
