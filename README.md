@@ -6,12 +6,12 @@ Collaborative filtering approach for a recommended system using python.
 #### Recommender System:-
 
 There are generally 6 types of recommender systems:-
-->Collaborative recommender system
-->Content based recommender system
-->Demographic based recommender system
-->Utility based recommender system
-->Knowledge based recommender system
-->Hybrid recommender system
+  1. Collaborative recommender system
+  2. Content based recommender system
+  3. Demographic based recommender system
+  4. Utility based recommender system
+  5. Knowledge based recommender system
+  6. Hybrid recommender system
 
 The most basic type and widely used is collaborative recommender system.
 
